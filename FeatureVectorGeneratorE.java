@@ -4,13 +4,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/*
-import net.moraleboost.mecab.Lattice;
-import net.moraleboost.mecab.Node;
-import net.moraleboost.mecab.Tagger;
-import net.moraleboost.mecab.impl.StandardTagger;
-*/
-
 public class FeatureVectorGeneratorE {
 
 	public Map<String, double[]> generateTFIDFVectors(List<String> documents){

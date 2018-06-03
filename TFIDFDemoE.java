@@ -3,25 +3,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-//import net.moraleboost.mecab.Lattice;
-//import net.moraleboost.mecab.Node;
-//import net.moraleboost.mecab.Tagger;
-//import net.moraleboost.mecab.impl.StandardTagger;
-
 public class TFIDFDemoE {
 	public static void main(String[] args){
 		List<String> documents = new ArrayList<String>();
-		// documents.add("weather is fine rainy.");
-		// documents.add("weather cloudy fine.");
-		// documents.add("basketball baseball soccer baseball");
 		// ファイル読み込み
 		try {
 			// ファイルのパスを指定する
 			//ファイル名を自分で入力 テストケースを使用する場合はQを入力
 			System.out.println("ファイル名を入力してください testfile: enter \'Q\' ");
-			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));//InputStreamReader ir = new InputStreamReader(System.in);を省略
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			String buf = null;
-			buf = br.readLine(); //System.out.println(buf);
+			buf = br.readLine();
 			File file = new File("");
 			if(buf.equals("Q")){
 				file = new File("Test.txt");
@@ -34,7 +26,7 @@ public class TFIDFDemoE {
 				return;
 			}
 			// BufferedReaderクラスのreadLineメソッドを使って1行ずつ読み込み表示する
-			BufferedReader bufferedReader = new BufferedReader(new FileReader(file));  //FileReader fileReader = new FileReader(file);を省略 そのためfileReader.close()->bufferedReader.close();
+			BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
 			String data;
 			while ((data = bufferedReader.readLine()) != null) {
 				documents.add(data);
@@ -80,8 +72,7 @@ public class TFIDFDemoE {
 			System.out.println("");
 		}
 		System.out.println("---cossimilarity---");
-		//		System.out.println(vector_2d.get(0).size()); //sizeの扱いのテスト
-		//System.out.println("test 1vs2");
+
 		double cos = 0.0;
 		double inner = 0.0;
 		for(int k = 0;k<vector_2d.size();k++){
