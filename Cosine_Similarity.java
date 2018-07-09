@@ -4,13 +4,13 @@
 //javac -cp .:jsoup-1.8.2.jar Extract.java
 //javac -cp .:jsoup-1.8.2.jar Get_html_and_Write.java
 //java -cp .:jsoup-1.8.2.jar Get_html_and_Write
-//必要ファイル TFIDF.java Extract.java
+//必要ファイル TFIDF.java Extract.java FeatureVectorGenerator.java
 //https://www.bbc.com/news/world-us-canada-44669009 https://www.bbc.com/news/live/business-44657989 https://www.bbc.com/news/business-44493414
 //https://www.bbc.com/sport/live/football/44071127 https://www.bbc.com/sport/football/44679819 https://www.bbc.com/news/entertainment-arts-44677975 https://www.bbc.com/news/newsbeat-44679514 https://www.bbc.com/sport/football/44419842 https://www.bbc.com/news/business-44664834 https://www.bbc.com/news/uk-northern-ireland-44651240
 import java.io.*;
 import java.net.*;
 
-class Csine_Similarity{
+class Cosine_Similarity{
   public static void main(String args[])throws Exception{
     String aHTML = new String();
     System.out.println("比較したい文書のURLを入力をしてください(複数可)");
