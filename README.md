@@ -19,12 +19,9 @@ ___
 必要ファイル TFIDF.java Extract.java FeatureVectorGenerator.java
 
 
-# sport business business testURL
-
-___
 # 入力例(3つのwebページの場合)
 
-->比較したい文書のURLを入力をしてください(複数可)
+->比較したい文書のURLを入力をしてください(複数可) (ここでのURLのカテゴリはそれぞれ　sports business business)
 
 $ https://www.bbc.com/news/world-us-canada-44669009 https://www.bbc.com/news/live/business-44657989 https://www.bbc.com/news/business-44493414
 
